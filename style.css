@@ -6,17 +6,17 @@
 }
 img {
     border-radius: 10%;
-    width: 60px;
-    height: 60px;
+    width: 200px;
+    height: 200px;
 }
 
 body{
     height: 100vh;
-    background: linear-gradient( #ece9e6, #ffffff);
+    background: linear-gradient( #000000,#ece9e6 50% );
     background-size: 100%;
 }
 .container {
-    width: 250px;
+    width: 500px;
     padding:50px;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -24,8 +24,7 @@ body{
     left: 50%;
     background-color: white;
     box-shadow: 0 15px 35px rgba(50, 50, 50, 0.2);
-    border-radius:10%;
-    border: 2px solid rgb(0, 0, 0);
+    border-radius:2%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,4 +33,32 @@ body{
     width: 90;
     display: flex;
     justify-content: space-around ;
+}
+p {
+    font-size: 16px;
+    margin: 25px 2px;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+button {
+    background-color: #eedfd1 ;
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    width: 150px;
+    color: #9c9a9a;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.rollDice{
+    animation: rollDice .8s infinite;
+}
+
+@keyframes rollDice{
+    0%{
+        transform: rotate(8deg);
+    }
+    100%{
+        transform: rotate(-8deg);
+    }
 }
