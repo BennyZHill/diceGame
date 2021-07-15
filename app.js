@@ -1,3 +1,4 @@
+const resetbtn = document.getElementsByClassName('reset-btn');
 let images = ["diceW1.svg",
 "diceW2.svg",
 "diceW3.svg",
@@ -18,11 +19,12 @@ function roll(){
         ;
         document.querySelector("#die-1").setAttribute
         ("src",images[dieOneValue]);
-        document.querySelector("#total").innerHTML = 
-        "Your total is " + (dieOneValue + 1)
         
+        document.querySelector("#total").innerHTML = 
+        "Your total is " + (dieOneValue + 1) 
 
     },
     2000
     );
 }
+

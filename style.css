@@ -15,7 +15,7 @@ body{
     background: linear-gradient( #000000,#ece9e6 50% );
     background-size: 100%;
 }
-.container {
+.game {
     width: 500px;
     padding:50px;
     position: absolute;
@@ -41,6 +41,7 @@ p {
     letter-spacing: .5px;
 }
 button {
+   
     background-color: #eedfd1 ;
     border: none;
     outline: none;
@@ -49,6 +50,19 @@ button {
     color: #9c9a9a;
     letter-spacing: 1px;
     border-radius: 5px;
+    cursor: pointer;
+}
+.reset-btn {
+    background-color: #eedfd1 ;
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    width: 150px;
+    color: #9c9a9a;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin: 10px;
+
 }
 .rollDice{
     animation: rollDice 2s infinite;
