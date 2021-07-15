@@ -17,6 +17,20 @@ body{
     background-size: 100%;
     font-family: 'Righteous', cursive;
 }
+.singlePlayer {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 50%;
+    cursor: pointer;
+    box-shadow: 0 15px 35px rgba(50, 50, 50, 0.2);
+    background-color: #e7d2bd;
+    color: rgb(109, 107, 107);
+    padding: 25px;
+    width: 300px;
+    text-transform: uppercase;
+    visibility: hidden;
+}
 .addPlayer {
     position: absolute;
     transform: translate(-50%, -50%);
