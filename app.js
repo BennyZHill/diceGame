@@ -1,4 +1,6 @@
 const resetbtn = document.getElementsByClassName('reset-btn');
+const Players = document.getElementsByClassName('addPlayer')
+let  = false 
 let images = ["diceW1.svg",
 "diceW2.svg",
 "diceW3.svg",
@@ -27,4 +29,3 @@ function roll(){
     2000
     );
 }
-

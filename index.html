@@ -8,27 +8,31 @@
     <title>D20</title>
 </head>
 <body>
-    <button class="addPlayer"> Add Player 2</button>
-    <button class="singlePlayer">single Player</button>
+    <div class="players">
     <div class="p1">
     <div class="dice-wrapper">
             <img src="diceW1.svg" id="die-1">
     </div>  
     <p id="total">Your Total Is</p>
     <button onclick="roll()">ROLL ME
+        <button class="stick">stick</button>
     </button>
+    
     <button class="reset-btn" >RESET ME</button>
     </div>  
-     <div class="p2">
+
+
+    <div class="p1">
         <div class="dice-wrapper">
                 <img src="diceW1.svg" id="die-1">
         </div>  
         <p id="total">Your Total Is</p>
         <button onclick="roll()">ROLL ME
+            <button class="stick">stick</button>
         </button>
         <button class="reset-btn" >RESET ME</button>
-        </div>
-    
+        </div> 
+     </div>
     <script src="app.js"></script>
 </body>
 </html>
