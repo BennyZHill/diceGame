@@ -56,9 +56,9 @@ button {
 
 @keyframes rollDice{
     0%{
-        transform: rotate(8deg);
+        transform: rotate(360deg);
     }
     100%{
-        transform: rotate(-8deg);
+        transform: rotate(-360deg);
     }
 }
