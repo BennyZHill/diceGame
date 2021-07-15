@@ -51,14 +51,14 @@ button {
     border-radius: 5px;
 }
 .rollDice{
-    animation: rollDice .8s infinite;
+    animation: rollDice 2s infinite;
 }
 
 @keyframes rollDice{
     0%{
-        transform: rotate(360deg);
+        transform: rotate(720deg);
     }
     100%{
-        transform: rotate(-360deg);
+        transform: rotate(-720deg);
     }
 }
