@@ -11,23 +11,27 @@
     <h3 class="d20">D20</h3>
     
     <div class="p1">
-    <h2 class="player1"> Player I</h2>
+    
     <div class="dice-wrapper">
+        <h2 class="player"> Player I</h2>
             <img src="diceW1.svg" id="die-1">
     </div>  
     <p id="total">Your Total Is</p>
-    <button onclick="roll()">ROLL ME
+    <button class="rollPlayer1" onclick="roll()">ROLL ME
     </button>
     <button class="reset-btn" >RESET ME</button>
     </div>  
+ <button class="switch" ><img src="flip.png" alt="switch plauer"></button>
+
      <div class="p2">
-        <div class="dice-wrapper">
+        <div class="dice-wrapper2">
+            <h2 class="player2"> Player 2</h2>
                 <img src="diceW1.svg" id="die-1">
         </div>  
-        <p id="total">Your Total Is</p>
-        <button onclick="roll()">ROLL ME
+        <p id="total2">Your Total Is</p>
+        <button class="rollPlayer2"onclick="roll()">ROLL ME
         </button>
-        <button class="reset-btn" >RESET ME</button>
+        <button class="reset-btn2" >RESET ME</button>
         </div>
         
     

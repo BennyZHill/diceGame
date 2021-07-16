@@ -9,8 +9,8 @@
 }
 img {
     border-radius: 15%;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
 body{
@@ -19,35 +19,15 @@ body{
     background-size: 100%;
     font-family: 'Righteous', cursive;
 }
-.d20 {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 10%;
-    left: 50%;
-    box-shadow: 30px 15px 550px rgb(50, 50, 50);
-    background:linear-gradient( #272727f8 50%,#6200ff98);
-    color: rgb(211, 210, 210);
-    padding: 100px;
-    width: 110vw;
-    text-transform: uppercase;
-    border-radius: 5px;
-    font-size: 100px;
-    border: none;
-    letter-spacing: 4px;
-    font-weight: bolder;
-    text-align: center;
-    
-    
-    
-}
+
 h2 {
     position: absolute;
     transform: translate(-50%, -50%);
     top:-15%;
     left: 50%;
     box-shadow:  0px 30px 30px rgb(49, 49, 49);
-    background-color: #e7d2bd;
-    color: rgb(105, 104, 104);
+    background-color: #386FA4;
+    color: rgb(250, 249, 249);
     padding: 25px;
     width: 300px;
     text-transform: uppercase;
@@ -57,13 +37,17 @@ h2 {
     border: .5px solid black
 
 }
+.player2 {
+    background-color: rgb(94, 255, 0);
+    color: #000000;
+}
 .p1 {
-    width: 500px;
+    width: 350px;
     padding:50px;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 60%;
-    left: 50%;
+    left: 25%;
     background-color: rgb(218, 216, 216);
     box-shadow: 0 15px 35px rgba(50, 50, 50, 0.432);
     border-radius:2%;
@@ -72,19 +56,19 @@ h2 {
     align-items: center;
 }
 .p2 {
-    width: 500px;
+    width: 350px;
     padding:50px;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    background-color: white;
-    box-shadow: 0 15px 35px rgba(50, 50, 50, 0.2);
+    top: 60%;
+    left: 75%;
+    background-color: rgb(218, 216, 216);
+    box-shadow: 0 15px 35px rgba(50, 50, 50, 0.432);
     border-radius:2%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 .dice-wrapper {
     width: 90;
@@ -99,12 +83,12 @@ p {
 }
 button {
    
-    background-color: #eedfd1 ;
+    background-color: #386FA4 ;
     border: .2px solid black;
     outline: none;
     padding: 15px 0;
     width: 200px;
-    color: #9c9a9a;
+    color: #fcfcfc;
     letter-spacing: 1px;
     border-radius: 5px;
     cursor: pointer;
@@ -112,13 +96,17 @@ button {
     font-size: large;
 
 }
+.rollPlayer2 {
+    background-color:rgb(37, 247, 9);
+}
+
 .reset-btn {
-    background-color: #eedfd1 ;
+    background-color: #386FA4 ;
   
     outline: none;
     padding: 15px 0;
     width: 150px;
-    color: #9c9a9a;
+    color: #fdfdfd;
     letter-spacing: 1px;
     border-radius: 5px;
     margin: 10px;
@@ -127,7 +115,17 @@ button {
 .rollDice{
     animation: rollDice 2s infinite;
 }
+.switch {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left:50%;
+    z-index: 1;
+    background:none;
+    border: none;
+    animation: none;
 
+}
 @keyframes rollDice{
     0%{
         transform: rotate(720deg);
